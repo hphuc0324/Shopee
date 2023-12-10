@@ -1,0 +1,164 @@
+/* Header */
+.header{
+    height: 160px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    background-image: linear-gradient(#ee4d2d,#ff7337);
+    z-index: 999;
+}
+
+/* Header navbar */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px;
+    color: var(--black-color);
+    font-size: 12px;
+}
+
+
+
+.nav-list__item{
+    padding: 0px 8px;
+    position: relative;
+}
+
+.nav-list__item:hover, .nav-item__link:hover{
+    cursor: pointer;
+    color: rgba(255, 253, 253, 0.7) ;
+}
+
+.nav-list__item:last-child{
+    border-left: solid 1px var(--white-color);
+}
+
+.nav-list__item:hover > .nav-item__sub-item{
+    display: block;
+}
+
+.nav-item__sub-item{
+    border-radius: 2px;
+}
+
+.icon--size-s{
+    padding: 4px;
+    font-size: 1.4rem;
+}
+
+.icon--size-l{
+    padding: 8px;
+    font-size: 1.6rem;
+}
+
+.nav-list__item--no-select{
+    cursor: default !important;
+    color: rgba(255, 253, 253, 1) !important;
+}
+
+.nav-item__qr-code{
+    width: 185px;
+    padding: 8px;
+    position: absolute;
+    
+    top: 150%;
+    float: left;
+    background-color: var(--white-color);
+    display: none;
+}
+
+.nav-item__sub-item::before{
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    display: block;
+}
+
+.nav-qr__image{
+    width: 100%;
+}
+
+.nav-qr__apps{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-apps__image img{
+   height: 24px;
+}
+
+.nav-item__notify{
+    position: absolute;
+    top: 150%;
+    right: 0;
+    display: none;
+    width: 400px;
+    background-color: var(--white-color);
+}
+
+.nav-notify__header h3{
+    color: #999;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-left: 8px;
+}
+
+.nav-notify__item{
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    background-color: rgb(238, 77, 45, 0.1)
+}
+
+.nav-notify__item.nav-notify__item--viewed{
+    background-color: #fdfdfd ;
+}
+
+.nav-notify__item:hover{
+    background-color: #f0efef;
+}
+
+.nav-notify__image{
+    width: 64px;
+    padding: 8px;
+}
+
+.nav-notify__body{
+    flex: 1;
+}
+
+.nav-notify__body p{
+    margin: 4px 16px;
+}
+
+.nav-notify__image img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.notify-body__heading{
+    color: var(--black-color);
+    font-size: 1.6rem;
+}
+
+.notify-body__content{
+    color: #888;
+    font-size: 1.4rem;
+}
+
+.nav-notify__footer{
+    color: #999;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 8px 0;
+}
+
+/* End header navbar */
+
+/* End header*/
+
