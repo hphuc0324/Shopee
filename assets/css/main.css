@@ -204,3 +204,136 @@
     }
 }
 
+
+/* Modal form */
+.modal__auth-form{
+    padding: 32px;
+    max-width: 480px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.modal-auth-form__header{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0px 32px;
+}
+
+.modal-header__heading{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.btn--no-background{
+    background-color: transparent !important;
+    border: none;
+    font-weight: 500;
+}
+
+.text--primary{
+    color: var(--theme-color) !important;
+}
+
+.text--normal{
+    color: var(--text-color) !important;
+}
+
+.text--grey{
+    color: var(--grey-color) !important;
+}
+
+.modal-auth-form__group{
+    margin-top: 16px;
+}
+
+.auth-form__input{
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 6px 4px;
+}
+
+.modal-auth-form__aside{
+    margin: 16px auto;
+}
+
+.modal-aside__policy{
+    max-width: 100%;
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: auto;
+}
+
+.modal-policy__link{
+    color: var(--theme-color);
+}
+
+.modal-auth-form__action{
+    display: flex;
+    margin-top: 120px;
+    justify-content: flex-end;
+}
+
+.modal-auth-form__social{
+    background-color: #f2efef;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0px;
+}
+
+
+
+.btn{
+    padding: 8px;
+    min-width: 160px;
+    border: none;
+    border-radius: 2px;
+    color: var(--white-color);
+    font-size: 1.4rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn.btn--primary{
+    background-color: var(--theme-color);
+}
+
+.btn.btn--no-padding{
+    padding: 0;
+    min-width: 0;
+}
+
+.btn--with-icon + .btn--with-icon{
+    margin-left: 16px;
+}
+
+.btn--with-icon{
+    font-size: 1.2rem;
+    max-height: 32px;
+    text-align: center;
+    flex-basis: 40%;
+    line-height: 1.5;
+}
+
+.btn--with-icon .btn__icon{
+    float: left;
+    font-size: 1.5rem;
+}
+
+.facebook__btn{
+    background-color: #1877f2;
+    color: var(--white-color) !important;
+}
+
+.google__btn{
+    background-color: var(--white-color);
+    color: var(--grey-color) !important;
+}
+
+
+/* End modal form */
