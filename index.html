@@ -103,11 +103,12 @@
              <div class="modal-form__container">
              <!-- Begin modal form -->
 
-                <div class="modal__auth-form">
+            <!-- Register form -->
+                <div style="display: none;" class="modal__auth-form">
                     <!--Begin form header -->
                     <div class="modal-auth-form__header">
-                        <h3 class="modal-header__heading">Đăng nhập</h3>
-                        <button class="btn btn--no-background text--primary btn--no-padding">Đăng ký</button>
+                        <h3 class="modal-header__heading">Đăng ký</h3>
+                        <button class="btn btn--no-background text--primary btn--no-padding">Đăng nhập</button>
                     </div>
 
                     <!-- End form header -->
@@ -121,6 +122,10 @@
                         <div class="modal-auth-form__group">
                             <input type="text" class="auth-form__input" placeholder="Mật khẩu">
                         </div>
+
+                        <div class="modal-auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
                     </div>
                     <!-- End form body -->
 
@@ -133,7 +138,7 @@
                     <!-- Begin form action (buttons) -->
                     <div class="modal-auth-form__action">
                         <button class="btn btn--no-background text--grey">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
                     </div>
                     <!-- End form action -->
 
@@ -143,7 +148,7 @@
                 <!-- End modal form -->
 
                  <!-- Begin form social -->
-                 <div class="modal-auth-form__social">
+                 <div style="display: none;" class="modal-auth-form__social">
                     <a style="color: black;"  href="" class="btn btn--with-icon facebook__btn">
                         <i class="fa-brands fa-square-facebook btn__icon "></i>
                         Kết nối với Facebook
@@ -155,6 +160,67 @@
                     </a>
                 </div>
                 <!-- End form social -->
+            <!-- End register form -->
+
+
+            <!-- Login form -->
+                <div  class="modal__auth-form">
+                    <!--Begin form header -->
+                    <div class="modal-auth-form__header">
+                        <h3 class="modal-header__heading">Đăng nhập</h3>
+                        <button class="btn btn--no-background text--primary btn--no-padding">Đăng ký</button>
+                    </div>
+
+                    <!-- End form header -->
+
+                    <!-- Begin form body(main form) -->
+                    <div class="modal-auth-form__form">
+                        <div class="modal-auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Số điện thoại/Email/Tài khoản">
+                        </div>
+
+                        <div class="modal-auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Mật khẩu">
+                        </div>
+
+                    </div>
+                    <!-- End form body -->
+
+                    <!-- Begin form aside -->
+                    <div class="modal-auth-form__aside">
+                        <div class="modal-auth-form__help">
+                            <a class="btn btn--no-background btn--no-padding text--primary">Quên mật khẩu</a>
+                            <div class="break"></div>
+                            <a class="btn btn--no-background btn--no-padding text--grey">Cần trợ giúp?</a>
+                        </div>
+                    </div>  
+                    <!-- End form aside -->
+
+                    <!-- Begin form action (buttons) -->
+                    <div class="modal-auth-form__action">
+                        <button class="btn btn--no-background text--grey">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+                    <!-- End form action -->
+
+
+                
+                </div>
+
+                <!-- Begin form social -->
+                <div class="modal-auth-form__social">
+                    <a style="color: black;"  href="" class="btn btn--with-icon facebook__btn">
+                        <i class="fa-brands fa-square-facebook btn__icon "></i>
+                        Kết nối với Facebook
+                    </a>
+
+                    <a style="color: black;" href="" class="btn btn--with-icon google__btn">
+                        <i class="fa-brands fa-google btn__icon"></i>
+                        Kết nối với Google
+                    </a>
+                </div>
+                <!-- End form social -->
+            <!-- End login form -->
             </div>
                
 
