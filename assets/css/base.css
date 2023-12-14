@@ -5,6 +5,10 @@
     --grey-color: #777;
 
     --theme-color: #ee4d2d;
+
+    --header-width: 190px;
+    --navbar-width: 30px;
+    --search-width: calc(var(--header-width) - var(--navbar-width));
 }
 
 *{
