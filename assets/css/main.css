@@ -350,9 +350,12 @@
     color: var(--white-color);
     width: 150px;
     font-size: 30px;
-    text-align: center;
     position: relative;
+
+    display: flex;
+    justify-content: center;
 }
+
 
 .search-cart__image:hover{
     cursor: pointer;
@@ -360,7 +363,7 @@
 
 .search-cart__wrap{
     display: inline-block;
-    padding: 4px8px;
+    padding: 4px 8px;
 }
 
 .search-cart__wrap:hover  .search-cart__list{
@@ -452,7 +455,7 @@
     background-color: var(--white-color);
     right: 35%;
     top: calc(100% + 16px);
-    text-align: center;
+   
     box-shadow: 1px 1px 1px 1px #ccc;
     transform-origin: 90% top;
     animation: FadeIn ease 0.2s;
@@ -463,6 +466,10 @@
 .search-cart__list.search-cart__list--empty .cart-empty__footer,
 .search-cart__list.search-cart__list--empty .cart-empty__image{
     display: block;
+}
+
+.search-cart__list.search-cart__list--empty{
+    text-align: center;
 }
 
 .search-cart__list::before{
@@ -510,4 +517,83 @@
     top: -8px;
 }
 
+.cart__heading{
+    color: var(--grey-color);
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0 16px;
+}
+
+
+.cart__item{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-top: 8px;
+ }
+
+ .cart__item:hover{
+    background-color: #eae9e9;
+    cursor: pointer;
+ }
+
+
+.cart-item__info{
+    flex: 1;
+ }
+
+ .cart-item__image .item__image{
+    width: 52px;
+    margin-top: 4px;
+ }
+
+ .item-info__line{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .item-info__line p{
+    line-height: 1.6rem !important;
+    margin: 6px;
+    max-width: 100%;
+ }
+
+ .item-info__name{
+    color: var(--black-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    max-width: 200px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+ }
+
+ .item-info__price{
+    color: var(--theme-color);
+    font-size: 1.6rem;
+ }
+
+ .item-info__amount{
+    font-size: 1.3rem;
+    color: var(--grey-color);
+ }
+
+ .item-info__type{
+    font-size: 1.4rem;
+    color: var(--grey-color);
+ }
+
+ .item-info__delete-btn{
+    color: #242424;
+    margin: 0 6px;
+ }
+
+ .cart__btn{
+    float: right;
+    margin: 8px;
+ }
+/* End cart */
+
 /* End search */
+
+
