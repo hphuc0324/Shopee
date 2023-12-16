@@ -97,14 +97,37 @@
                    </div>
 
                    <div class="search__search-field">
-                        <input type="text" class="search-field__input">
+                        <div class="search-field__action">
+                            <input type="text" class="search-field__input" placeholder="Search for product">
+
+                            <div class="search-field__history">
+                                <p class="history__heading">Tìm sản phẩm</p>
+
+                                <ul class="history__list">
+                                    <li class="history__item"><a href="" class="history-item__link">Sản phầm 1</a></li>
+                                    <li class="history__item"><a href="" class="history-item__link">Sản phầm 2</a></li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="search-field__btn">
                             <i class="search-field__image fa-solid fa-magnifying-glass"></i>
                         </div>
+
+                        
                    </div>
 
                    <div class="search__cart">
-                    <i class="search-cart__image fa-solid fa-cart-shopping"></i>
+                        <div class="search-cart__wrap">
+                            <i class="search-cart__image fa-solid fa-cart-shopping"></i>
+                            <span class="search-cart__notice">3</span>
+
+                            <div class="search-cart__list search-cart__list--empty">
+                                <div id="cart__arrow" class="arrow up top-right"></div>
+                                <img src="./assets/images/no-product.png" alt="" class="cart-empty__image">
+                                <p class="cart-empty__footer">Chưa có sản phẩm</p>
+                            </div>
+                        </div>
+                        
                    </div>
                 </div>
                 <!-- End top-search -->
