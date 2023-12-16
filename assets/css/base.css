@@ -682,10 +682,11 @@ a{
     font-size: 1.5rem;
 }
 
-.break{
-    width: 1px;
+.break{   
+    height: 12px;  
     background-color: var(--grey-color);
     margin: 0 12px;
+    border: 1px solid #eeeeee;
 }
 
 @keyframes fadeIn {

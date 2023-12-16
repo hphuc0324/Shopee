@@ -31,11 +31,13 @@
                             </div>
 
                         </li>
+                        <div class="break nav__break"></div>
                         <li class="nav-list__item">
-                            <span class="nav-list__item--no-select">Kết nối</span>
-                            <a href="" class="nav-item__link"><i class="icon--size-s fa-brands fa-facebook"></i></a>
-                            <a href="" class="nav-item__link"><i class="icon--size-s fa-brands fa-instagram"></i></a>
-                        
+                            <div class="nav-item__wrap">
+                                <span class="nav-list__item--no-select">Kết nối</span>
+                                <a href="" class="nav-item__link"><i class="icon--size-s fa-brands fa-facebook"></i></a>
+                                <a href="" class="nav-item__link"><i class="icon--size-s fa-brands fa-instagram"></i></a>
+                            </div>
                         </li>
                     </ul>
                     <ul class="nav__list">
@@ -78,8 +80,25 @@
                         <li class="nav-list__item">        
                             <a href="" class="nav-item__link"><i class="icon--size-s fa-solid fa-question"></i>Trợ giúp</a>
                         </li>
-                        <li class="nav-list__item">Đăng nhập</li>
-                        <li class="nav-list__item">Đăng ký</li>
+                        <!-- <li class="nav-list__item">Đăng nhập</li>
+                        <li class="break nav__break"></li>
+                        <li class="nav-list__item">Đăng ký</li> -->
+
+                        <!-- User info -->
+                        <li class="nav-list__item nav__user">
+                            <img src="./assets/images/thiet_luon_a_ha.jpg" alt="" class="nav-user__avt">
+                            <span class="nav-user__name">Hoàng Phúc</span>
+
+                            <div class="nav-item__sub-item nav-user__info">
+                                <div id="user__arrow" class="arrow up top-right"></div>
+                                <ul class="user-info__list">
+                                    <li class="user-info-list__item">Tài khoản của tôi</li>
+                                    <li class="user-info-list__item">Đơn mua</li>
+                                    <li class="user-info-list__item">Đăng xuất</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- End user info -->
                     </ul>
                 </div>
                 <!-- End nav -->
@@ -98,10 +117,10 @@
 
                    <div class="search__search-field">
                         <div class="search-field__action">
-                            <input type="text" class="search-field__input" placeholder="Search for product">
+                            <input type="text" class="search-field__input" placeholder="Tìm kiếm sản phẩm">
 
                             <div class="search-field__history">
-                                <p class="history__heading">Tìm sản phẩm</p>
+                                <p class="history__heading">Sản phẩm đã tìm</p>
 
                                 <ul class="history__list">
                                     <li class="history__item"><a href="" class="history-item__link">Sản phẩm 1</a></li>
