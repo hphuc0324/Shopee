@@ -90,6 +90,11 @@ a{
     max-width: 16.66667%;
 }
 
+.c-2-4{
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
 .c-3{
     flex: 0 0 25%;
     max-width: 25%;
@@ -204,6 +209,7 @@ a{
 
     .m-1,
     .m-2,
+    .m-2-4,
     .m-3,
     .m-4,
     .m-5,
@@ -226,7 +232,10 @@ a{
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
     }
-    
+    .m-2-4{
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
     .m-3{
         flex: 0 0 25%;
         max-width: 25%;
@@ -363,6 +372,11 @@ a{
         max-width: 16.66667%;
     }
     
+    .l-2-4{
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
     .l-3{
         flex: 0 0 25%;
         max-width: 25%;
@@ -488,6 +502,7 @@ a{
 
     .wide .l-1,
     .wide .l-2,
+    .wide .l-2-4,
     .wide .l-3,
     .wide .l-4,
     .wide .l-5,
@@ -509,6 +524,11 @@ a{
     .wide .l-2{
         flex: 0 0 16.66667%;
         width: 16.66667%;
+    }
+
+    .wide .l-2-4{
+        flex: 0 0 20%;
+        width: 20%;
     }
     
     .wide .l-3{
@@ -619,6 +639,7 @@ a{
     display: flex;
     align-items: center;
     animation: fadeIn ease-in 0.1s;
+    z-index: 999;
 }
 
 .modal__overlay{
@@ -649,6 +670,8 @@ a{
     border-radius: 2px;
     color: var(--white-color);
     font-size: 1.4rem;
+    background-color: #fff;
+    color: #000;
 }
 
 .btn:hover{
@@ -657,6 +680,7 @@ a{
 
 .btn.btn--primary{
     background-color: var(--theme-color);
+    color: var(--white-color);
 }
 
 .btn.btn--no-padding{
@@ -695,6 +719,54 @@ a{
     width: 100%;
     background-color: #bab9b9;
     margin: 16px 0;
+}
+
+.selection{
+    display: inline-flex;
+    min-width: 200px;
+    background-color: var(--white-color);
+    padding: 8px;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    margin: 0 8px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.selection__input{
+    position: absolute;
+    background-color: var(--white-color);
+    top: calc(100% + 1px);
+    left: 0;
+    border-radius: 3px;
+    width: 100%;
+    display: none;
+    z-index: 1;
+}
+
+.selection-item__link{
+    display: block;
+    color: var(--black-color);
+    padding: 16px;
+}
+
+.selection-item__link:hover{
+    color: var(--theme-color);
+}
+
+.selection:hover{
+    cursor: pointer;
+}
+
+.selection:hover .selection__input{
+    display: block;
+}
+
+
+
+.selection__label, .selection__icon{
+    margin: 0 4px;
 }
 
 @keyframes fadeIn {
