@@ -760,6 +760,10 @@ body{
 /* End home filter */
 
 /* Product */
+.product__row{
+    margin-top: 12px;
+}
+
 .product__wrap{
     width: 100%;
     height: 315px;
@@ -770,18 +774,50 @@ body{
 .product__background-image{
     width: var(100%);
     padding-bottom: 100%;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .product__discount{
     position: absolute;
-    padding: 4px 8px;
+    padding: 3px 8px;
     background-color: #ffe97a;
     font-size: 1.2rem;
     color: var(--theme-color);
     border-radius: 1px;
     right: 0;
     top: 0;
+}
+
+.product__type-tag{
+    position: absolute;
+    padding: 4px 8px;
+    color: var(--theme-color);
+    background-color: currentColor;
+    left: -3px;
+    top: 10px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.product__type-tag.type--mall{
+    color: #d0011b;
+}
+
+.product__type-tag::after{
+    content: "";
+    border-top: 3px solid currentColor;
+    border-left: 3px solid transparent;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    filter: brightness(60%); 
+}
+
+.product__type-tag span{
+    color: var(--white-color);
+    font-weight: 500;
 }
 
 .product__info{
@@ -810,6 +846,49 @@ body{
 
 .product-info__name{
     font-size: 1.2rem;
+    max-lines: 2;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    margin: 0 0 12px;
+}
+
+.product-info__price{
+    margin: 12px 0;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.product-price__old-price{
+    font-size: 1.3rem;
+    color: var(--grey-color);
+    text-decoration: line-through;
+}
+
+.product-price__new-price{
+    font-size: 1.5rem;
+    color: var(--theme-color);
+    margin-left: 4px;
+}
+
+
+.product-info__review{
+    display: flex;
+    align-items: center;
+}
+
+.product-review__star{
+    font-size: 0.8rem;
+    margin-right: 4px;
+    
+}
+
+.review-star__icon--gold{
+    color: rgb(255 206 61);
 }
 /* End product */
 
