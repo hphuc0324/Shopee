@@ -29,5 +29,5 @@
 
 ## Product
 
-<p>This is just a basic project so i choose publishing it on <em>github.io</em>. You can test it out following this link [Shopee](https://hphuc0324.github.io/Shopee/). Any comments or advice will be appreciate, thanks for reading
+<p>This is just a basic project so i choose publishing it on <em>github.io</em>. You can test it out following this link <a href="https://hphuc0324.github.io/Shopee/">Shopee</a>. Any comments or advice will be appreciate, thanks for reading
 </p>
