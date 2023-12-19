@@ -1,2 +1,5 @@
-# Clone-Shopee-Frontend
- Clone Shopee's Interface while learning frontend
+# Shopee-Frontend
+ A basic frontend project cloning Shopee - a famous e-commerce platform
+
+## Main features
+- Navbar
